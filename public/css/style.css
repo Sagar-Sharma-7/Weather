@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Itim&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upperBox{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time{
+    width: 100vw;
+    font-size: 1.2rem;
+    padding: 1vh 1vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img{
+    height: 38vh;
+    animation: image 2s infinite;
+}
+
+.far, .fas{
+    font-size: 10rem;
+    animation: image 2s infinite;
+}
+
+.fog{
+    color: rgb(73, 115, 255);
+}
+
+.fa-cloud{
+    color: rgb(46, 46, 53);
+}
+
+.fa-circle{
+    color: yellow;
+}
+
+.fa-sun{
+    color: yellow;
+}
+
+.mist{
+    color: rgb(143, 179, 255);
+}
+
+@keyframes image{
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+
+
+.upperBoxBottom{
+    width: 100vw;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 1vh;
+    justify-content: center;
+    align-items: center;
+}
+.temp{
+    text-align: center;
+    font-size: 4rem;
+    border-right: 2px solid #000;
+    padding-right: 2vw;
+}
+.status-location{
+    grid-column: 2 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 2vw;
+}
+
+.status{
+    font-size: 2rem;
+}
+.location{
+    font-size: 1.3rem;
+}
+.date{
+    background-color:  #3944F7;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 1.2rem;
+}
+
+/* lower box */
+.lowerBox{
+    height: 30vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #1e1e1e;
+    padding: 1vh 1vw;
+    line-height: 4vh;
+}
+.cityName{
+    /* border: 1px solid #000; */
+    grid-column: 1 / span 2;
+    height: 10vh;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    padding-left: 5vw;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 20px;
+    width: 60vw;
+}
+.searchBtn{
+    /* border: 1px solid #000; */
+    height: 10vh;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+@media all and (max-width: 600px){
+    .temp{
+        font-size: 3rem;
+    }
+    .status{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media all and (max-width: 450px){
+
+    .temp{
+        font-size: 2.2rem;
+    }
+    .status{
+        font-size: 1.2rem;
+    }
+    .location{
+        font-size: 0.8rem;
+    }
+    .date{
+        width: 30vw;
+        font-size: 1rem;
+        line-height: 4vh;
+    }
+    
+}

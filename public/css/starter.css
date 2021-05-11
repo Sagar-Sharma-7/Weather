@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Itim&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.upperBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.time{
+    font-size: 3rem;
+    margin-bottom: 4vh;
+}
+
+.date{
+    font-size: 2rem;
+    margin-bottom: 10vh;
+}
+
+.cityName{
+    width: 90vw;
+    height: 5vh;
+    padding: 2vw;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 5vh;
+}
+
+.searchBtn{
+    width: 90vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
