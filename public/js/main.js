@@ -18,6 +18,7 @@ const visibility = document.querySelector(".visibility");
 const cityName = document.querySelector(".cityName");
 const searchBtn = document.querySelector(".searchBtn");
 
+const API_KEY = ""; // your api key
 window.screen.orientation
     .lock("portrait")
     .then(
@@ -47,8 +48,8 @@ const getWeatherInfo = async () => {
             alert("First type name of any city....")
         }else{
             cssFile.setAttribute('href', './public/css/style.css')
-            const API_URL = `http://api.openweathermap.org/data/2.5/weather?q=${userCityName}&units=metric&appid=a127923b70e080507631f46da6a62469`
-            // WARNING:- Use Your Own API Key, If you use others API Key it can cause problem in your device
+            const API_URL = `http://api.openweathermap.org/data/2.5/weather?q=${userCityName}&units=metric&appid=${API_KEY}`
+
             const fetchData = await fetch(API_URL);
             const jsonData = await fetchData.json();
             const arrData = await [jsonData];
